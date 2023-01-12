@@ -9,10 +9,10 @@ import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms'
 export class LoginComponent implements OnInit {
 
   datos!: string;
-  confirmo!: string;
-  minimo:string=" (Mínimo 10 carácteres)";
-  valido:string=" (Email inválido)";
-  textmensaje:string=" (No puede quedar vacio este mensaje)";
+  conf!: string;
+  min:string=" (Mínimo 10 carácteres)";
+  val:string=" (Email inválido)";
+  txtmen:string=" (No dejar en blanco)";
 
   public formLogin!: FormGroup;
 
@@ -49,10 +49,11 @@ export class LoginComponent implements OnInit {
                   Correo= ${this.formLogin.value.correo}
                   Mensaje= ${this.formLogin.value.mensaje}
                 `;
-    this.confirmo = "Todos los datos son válidos";
-    this.minimo = "\n";
-    this.valido= "\n";
-    this.textmensaje= "\n";
+    this.conf = "Todos los datos son válidos";
+    this.min = "\n";
+    this.val= "\n";
+    this.txtmen= "\n";
   }
 
 }
+
