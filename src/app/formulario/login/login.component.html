@@ -7,22 +7,22 @@
             <div>
                 <label for="nom">Nombre: </label>
                 <input type="text" id="nombre" formControlName="nombre">
-                <span class="text-xs">{{minimo}}</span>
+                <span class="text-xs">{{min}}</span>
             </div>
             <div class="my-3 p-3">
                 <label for="">Email: </label>
                 <input type="text" id="correo" formControlName="correo">
-                <span class="text-xs">{{valido}}</span>
+                <span class="text-xs">{{val}}</span>
             </div>
             <div class="p-3">
                 <label for="">Mensaje</label><br>
                 <textarea id="mensaje" cols="40" rows="5" formControlName="mensaje"></textarea>
-                <p>{{textmensaje}}</p>
+                <p>{{txtmen}}</p>
             </div>
             <div class="my-2 p-3">
                 <button class="py-1 px-4 text-center text-white"
                     [disabled]="formLogin.invalid">Confirmar</button>
-                <p>{{confirmo}}</p>
+                <p>{{conf}}</p>
             </div>
         </form>
     </div>
